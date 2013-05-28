@@ -213,6 +213,12 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
+                                        <fork>true</fork>
+            <meminitial>1024m</meminitial>
+            <maxmem>2024m</maxmem>
+            <permgensize>512m</permgensize>
+                                        <argLine>-Xmx2048m</argLine>
+                                        <argLine>-XX:MaxPermSize=256m</argLine>
 				</configuration>
 			</plugin>
 		    <plugin>
